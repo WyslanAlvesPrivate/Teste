@@ -1,0 +1,87 @@
+<th:block th:fragment="modalEdit">
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalEdit" tabindex="-1" aria-labelledby="exampleModalLabelEdit" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabelEdit">Edição</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+		    <div class="modal-body">
+
+		      <!-- dados já salvos -->
+		      <input name="id" id="id" type="text" value="" readonly required style="display: none;"/>
+		      <input name="dataEntrada" id="dataEntrada" type="text" value="" readonly required style="display: none;"/>
+		      <input name="horaEntrada" id="horaEntrada" type="text" value="" readonly required style="display: none;"/>
+		      <input name="tempoTotal" id="tempoTotal" type="text" value="" readonly required style="display: none;"/>
+		      <input name="valor" id="valor" type="text" value="" readonly required style="display: none;"/>
+		      	
+		      <input maxlength="8" autofocus class="form-control" id="placa" name="placa" 
+		        type="text" placeholder="Placa do veiculo">
+		      <input style="margin-top: 2%;" class="form-control" id="modelo" name="modelo" 
+		        type="text" placeholder="Modelo do veiculo">
+		        
+		    </div>
+		    <div class="modal-footer">
+		      <button type="button" class="btn btn-primary" onclick="salvarEdicoes()">Salvar Alterações</button>
+		    </div>
+	    </div>
+	  </div>
+	</div>
+</th:block>
+
+
+
+
+
+<th:block th:fragment="modalSave">
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalSave" tabindex="-1" aria-labelledby="exampleModalLabelSave" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabelSave">Novo Veiculo</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+		    <div class="modal-body">
+
+		      <input maxlength="8" autofocus class="form-control" id="placaSalvar" name="placa" 
+		        type="text" placeholder="Placa do veiculo">
+		      <input style="margin-top: 2%;" class="form-control" id="modeloSalvar" name="modelo" 
+		        type="text" placeholder="Modelo do veiculo">
+		        
+		    </div>
+		    <div class="modal-footer">
+		      <button type="button" class="btn btn-primary" onclick="salvarNovo()">Salvar Novo</button>
+		    </div>
+	    </div>
+	  </div>
+	</div>
+</th:block>
+
+
+
+<th:block th:fragment="modalSaida">
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalSaida" tabindex="-1" aria-labelledby="exampleModalLabelSaida" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabelSaida">Saida de Veiculo</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+		    <div class="modal-body">
+
+		      <input id="totalHorasV" value="" readonly>
+		      <input id="totalV" value="" readonly>
+		      <input id="idSaida" value="" readonly style="display: none;">
+		        
+		    </div>
+		    <div class="modal-footer">
+		      <button type="button" class="btn btn-info" 
+		      	onclick="efeturarSaida(document.getElementById('idSaida').value.toString())">Concluir Saida</button>
+		    </div>
+	    </div>
+	  </div>
+	</div>
+</th:block>

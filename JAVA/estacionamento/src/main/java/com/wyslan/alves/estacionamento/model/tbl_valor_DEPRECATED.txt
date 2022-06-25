@@ -1,0 +1,9 @@
+  Está tabela esta como depreciada, pois não é nescessario exisir, motivos:
+	
+	Primeiramente a tabela movimentação já possuirá estes dados; 
+	E segundamente por movimentação já "possuir estes dados", esta tabela então, serviria apenas como uma "regra de négocio";
+	Terceiramente porque existir uma tabela apenas para saber o valor a ser pago, se apenas um calculo simples 
+  em um enpoint já resolveria?;
+
+  Então porque então existir uma tabela a mais apenas para conter dados que outra tabela de certa forma já possui?
+  Neste caso é bem desnecessario, DEPRECT

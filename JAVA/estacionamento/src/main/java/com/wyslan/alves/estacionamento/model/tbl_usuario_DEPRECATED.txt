@@ -1,0 +1,6 @@
+  Outra tabela que não faz o menor sentido existir no contexto desta aplicação, pontos:
+
+    NÃO PRECISAMOS DE MAIS DE UM UNICO USUÁRIO, porque ter mas de um usuário que só tera login e senha
+  diferentes mas tera o mesmo acesso que o outro?, isso mesmo, não faz sentido.
+	NÃO PRECISAMOS DE UM BANCO DE DADOS APENAS PARA UM UNICO USUÁRIO, isso mesmo, porque uma tabela a mais se podemos
+  definir estaticamente o unico usuário com sua senha?, isso só demandaria custo operacional desnecessario.
